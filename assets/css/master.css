@@ -1,0 +1,192 @@
+/*
+	Project Name : DesignIT (SS Preliminary Test)
+	Author : Prilivia Ruli Fatmawati
+	Date Created : 1 September 2018
+  Copyright : 2018 (c) All Rights Reserved
+  
+*/
+.d-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+#hero header {
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
+  justify-content: flex-end;
+  padding: 30px 30px 10px; }
+  #hero header img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: auto;
+    width: 70px; }
+  #hero header nav {
+    margin: 1em; }
+    #hero header nav li {
+      list-style: none;
+      padding: .5em 1.75em; }
+      #hero header nav li a {
+        color: inherit;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+        text-transform: uppercase; }
+#hero .div-below-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url("../img/luca-micheli-551329-unsplash.jpg");
+  flex-direction: column;
+  height: 65vh;
+  justify-content: center;
+  position: relative; }
+  #hero .div-below-header a, #hero .div-below-header p {
+    color: #fff;
+    z-index: 4; }
+  #hero .div-below-header a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    padding: 0.2em 1em;
+    text-decoration: none; }
+    #hero .div-below-header a:hover {
+      background-color: #fff;
+      color: #6da028; }
+  #hero .div-below-header p {
+    text-align: center;
+    width: 50vw; }
+  #hero .div-below-header .overlay {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.nav-inline {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .nav-inline a.active {
+    font-weight: 700; }
+
+#list {
+  padding: 5em 12em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3em; }
+  #list .item img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%; }
+  #list .item h4 {
+    color: #6da028;
+    font-size: 1.3em;
+    margin: 10px 0 5px;
+    text-decoration: underline; }
+
+footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #111;
+  color: #fff;
+  padding: 2em 12em; }
+  footer .footer-item {
+    flex: 1; }
+    footer .footer-item li {
+      list-style: none; }
+      footer .footer-item li a {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        color: #fff;
+        opacity: .7;
+        text-decoration: none; }
+        footer .footer-item li a:hover {
+          color: #6da028; }
+    footer .footer-item .d-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em; }
+      footer .footer-item .d-grid img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100%; }
+  footer h5 {
+    font-size: 1.0em;
+    font-weight: 600;
+    margin-bottom: .7em; }
+
+@media only screen and (max-width: 1024px) {
+  #list {
+    padding: 5em 10em; }
+
+  footer {
+    padding: 2em 10em; } }
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.85em; }
+
+  #list {
+    grid-template-columns: repeat(1, 1fr); }
+
+  footer {
+    flex-direction: column; }
+    footer .footer-item {
+      margin-bottom: 1.2em;
+      text-align: center; } }
+@media only screen and (max-width: 480px) {
+  #hero header {
+    height: 50vh; }
+  #hero .div-below-header {
+    height: 50vh; }
+    #hero .div-below-header p {
+      width: 80vw; }
+
+  .nav-inline {
+    flex-direction: column; }
+
+  #list {
+    padding: 5em 3em; }
+
+  footer {
+    padding: 2em 3em; } }
+
+/*# sourceMappingURL=master.css.map */
